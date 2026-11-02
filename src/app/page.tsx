@@ -5,9 +5,9 @@ import { profile } from "@/data/profile";
 
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-md flex-1 px-4 py-12 sm:py-16">
+    <main className="mx-auto flex w-full max-w-md flex-1 flex-col justify-center px-7 py-16 sm:py-24">
       <Profile {...profile} />
-      <ul className="mt-10 flex flex-col gap-6">
+      <ul className="mt-12 flex flex-col gap-5">
         <Suspense fallback={<LinkListFallback />}>
           <LinkList />
         </Suspense>
