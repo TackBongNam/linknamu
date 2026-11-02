@@ -18,7 +18,7 @@ export function LinkListFallback() {
     <>
       {links.map((link) => (
         <li key={link.id}>
-          <LinkCard link={link} />
+          <LinkCard link={link} initialCount={0} />
         </li>
       ))}
     </>
